@@ -1,4 +1,4 @@
-# NR2003-on-Linux
+# NASCAR Racing 2003 Season Linux Installation Guide
 
 ## Contributor Note
 
