@@ -4,6 +4,8 @@
 
 If something doesn't work you had to do something slighty different, feel free to make a pull request for any suggested edits.
 
+## [Video](https://www.youtube.com/watch?v=3f68ZDL-yMw)
+
 ## Requirements
 
 * [Wine](https://wiki.winehq.org/Download)
