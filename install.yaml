@@ -1,0 +1,27 @@
+files:
+- cd_installer: N/A:Select Setup.exe from the game's CD files.
+- update_installer: N/A:Select 1.2.0.1 update exe.
+- no_cd_file: N/A:Select the 1.2.0.1 No-CD file.
+game:
+  arch: win32
+  exe: $GAMEDIR/drive_c/Papyrus/NASCAR Racing 2003 Season/NR2003.exe
+  prefix: $GAMEDIR
+  working_dir: $GAMEDIR/drive_c/Papyrus/NASCAR Racing 2003 Season
+installer:
+- task:
+    executable: cd_installer
+    name: wineexec
+    prefix: $GAMEDIR/prefix
+- task:
+    executable: update_installer
+    name: wineexec
+    prefix: $GAMEDIR/prefix
+- move:
+    dst: working_dir/NR2003_CD.exe
+    src: working_dir/NR2003.exe
+- move:
+    dst: working_dir/NR2003.exe
+    src: no_cd_file
+system:
+- env:
+    SOMEENV: true
